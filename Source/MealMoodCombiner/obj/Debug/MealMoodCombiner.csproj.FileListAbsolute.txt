@@ -3,6 +3,7 @@
 /home/jordan/.local/share/Steam/steamapps/common/RimWorld/Mods/MealMoodCombiner/Source/MealMoodCombiner/obj/Debug/MealMoodCombiner.AssemblyInfoInputs.cache
 /home/jordan/.local/share/Steam/steamapps/common/RimWorld/Mods/MealMoodCombiner/Source/MealMoodCombiner/obj/Debug/MealMoodCombiner.AssemblyInfo.cs
 /home/jordan/.local/share/Steam/steamapps/common/RimWorld/Mods/MealMoodCombiner/Source/MealMoodCombiner/obj/Debug/MealMoodCombiner.csproj.CoreCompileInputs.cache
+/home/jordan/.local/share/Steam/steamapps/common/RimWorld/Mods/MealMoodCombiner/Source/MealMoodCombiner/obj/Debug/MealMoodCombiner.sourcelink.json
 /home/jordan/.local/share/Steam/steamapps/common/RimWorld/Mods/MealMoodCombiner/1.6/Assemblies/MealMoodCombiner.dll
 /home/jordan/.local/share/Steam/steamapps/common/RimWorld/Mods/MealMoodCombiner/1.6/Assemblies/MealMoodCombiner.pdb
 /home/jordan/.local/share/Steam/steamapps/common/RimWorld/Mods/MealMoodCombiner/Source/MealMoodCombiner/obj/Debug/MealMoodCombiner.dll

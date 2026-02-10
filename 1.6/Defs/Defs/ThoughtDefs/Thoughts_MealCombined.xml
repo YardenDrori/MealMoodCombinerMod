@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Defs>
+  <ThoughtDef>
+    <defName>MealMoodCombined</defName>
+    <thoughtClass>MealMoodCombiner.Thought_MealCombined</thoughtClass>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>ate meal</label>
+        <description>I ate a meal.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>
