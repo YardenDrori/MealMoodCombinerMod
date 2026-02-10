@@ -46,6 +46,8 @@ public static class ThoughtsFromIngesting_MergeMoodPatch
       if (moodOffsetsApplied.Contains(mood.thought))
         continue;
 
+      moodOffsetsApplied.Add(mood.thought);
+
       //TODO: add support for stages??
       totalMoodOffset += mood.thought.stages[0].baseMoodEffect;
       if (precept == null && mood.fromPrecept != null)
