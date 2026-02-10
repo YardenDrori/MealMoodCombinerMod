@@ -26,7 +26,6 @@ public static class ThoughtsFromIngesting_MergeMoodPatch
     float mealMoodOffset = 0;
     if (foodDef.ingestible.tasteThought != null)
     {
-      //TODO: add support for stages??
       label = $"{foodDef.ingestible.tasteThought.stages[0].label}";
       mealMoodOffset = foodDef.ingestible.tasteThought.stages[0].baseMoodEffect;
       desc = $"{foodDef.ingestible.tasteThought.stages[0].description} ({mealMoodOffset})\n\n\n";
@@ -34,7 +33,6 @@ public static class ThoughtsFromIngesting_MergeMoodPatch
     }
     else
     {
-      //TODO: add support for stages??
       label = $"ate {foodDef.label}";
       desc = $"";
     }
@@ -48,7 +46,6 @@ public static class ThoughtsFromIngesting_MergeMoodPatch
 
       moodOffsetsApplied.Add(mood.thought);
 
-      //TODO: add support for stages??
       totalMoodOffset += mood.thought.stages[0].baseMoodEffect;
       if (precept == null && mood.fromPrecept != null)
       {
