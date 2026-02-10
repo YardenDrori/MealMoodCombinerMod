@@ -94,6 +94,7 @@ public static class PendingThoughtData
     public string Label;
     public string Description;
     public float MoodOffset;
+    public int TickAdded;
   }
 
   public static void Store(Pawn pawn, string label, string desc, float mood)
@@ -103,6 +104,7 @@ public static class PendingThoughtData
       Label = label,
       Description = desc,
       MoodOffset = mood,
+      TickAdded = Find.TickManager.TicksGame,
     };
   }
 
