@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <packageId>blacksparrow.mealmoodcombiner</packageId>
-  <name>Ingredient mood is part of meal mood</name>
+  <name>Combined Meal Thoughts</name>
   <author>BlackSparrow</author>
   <supportedVersions>
     <li>1.6</li>
