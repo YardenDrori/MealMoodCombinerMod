@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MealMoodCombiner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3f32f6ab3cef654fef1c59675f7bc5b0dcea2a4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40378d7417677e4e7e445b09ed5a25922213e2df")]
 [assembly: System.Reflection.AssemblyProductAttribute("MealMoodCombiner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MealMoodCombiner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
