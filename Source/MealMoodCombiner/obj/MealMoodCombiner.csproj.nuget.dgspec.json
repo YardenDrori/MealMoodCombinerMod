@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/jordan/.local/share/Steam/steamapps/common/RimWorld/Mods/MealMoodCombiner/Source/MealMoodCombiner/MealMoodCombiner.csproj": {}
+  },
+  "projects": {
+    "/home/jordan/.local/share/Steam/steamapps/common/RimWorld/Mods/MealMoodCombiner/Source/MealMoodCombiner/MealMoodCombiner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jordan/.local/share/Steam/steamapps/common/RimWorld/Mods/MealMoodCombiner/Source/MealMoodCombiner/MealMoodCombiner.csproj",
+        "projectName": "MealMoodCombiner",
+        "projectPath": "/home/jordan/.local/share/Steam/steamapps/common/RimWorld/Mods/MealMoodCombiner/Source/MealMoodCombiner/MealMoodCombiner.csproj",
+        "packagesPath": "/home/jordan/.nuget/packages/",
+        "outputPath": "/home/jordan/.local/share/Steam/steamapps/common/RimWorld/Mods/MealMoodCombiner/Source/MealMoodCombiner/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jordan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>blacksparrow.mealmoodcombiner</packageId>
+  <name>Ingredient mood is part of meal mood</name>
+  <author>BlackSparrow</author>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <description>Makes mood buffs or debuffs that come from eating specific ingredients (e.g insect meat) part of the meal mood effect to clean the mood panel</description>
+</ModMetaData>
