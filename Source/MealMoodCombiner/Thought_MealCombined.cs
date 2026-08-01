@@ -1,4 +1,5 @@
 using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace MealMoodCombiner
@@ -16,7 +17,9 @@ namespace MealMoodCombiner
     {
       customLabel = data.Label;
       customDescription = data.Description;
-      moodOffset = (int)(data.MoodOffset);
+      // Round rather than truncate: Thought_Memory.moodOffset is an int, and a plain cast
+      // drops fractional baseMoodEffects toward zero, turning -0.5 into 0.
+      moodOffset = Mathf.RoundToInt(data.MoodOffset);
     }
 
     public override void ExposeData()

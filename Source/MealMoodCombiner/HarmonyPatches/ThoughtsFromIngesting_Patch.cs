@@ -37,7 +37,10 @@ public static class ThoughtsFromIngesting_MergeMoodPatch
       desc = $"";
     }
 
-    float totalMoodOffset = 0;
+    // Only the thoughts the meal picked up on top of its taste thought - condiments, human
+    // meat and so on. The taste thought itself is already in moodOffsetsApplied and is
+    // skipped below, so this deliberately excludes mealMoodOffset.
+    float extraMoodOffset = 0;
     Precept precept = null;
     foreach (var mood in __result)
     {
@@ -46,7 +49,7 @@ public static class ThoughtsFromIngesting_MergeMoodPatch
 
       moodOffsetsApplied.Add(mood.thought);
 
-      totalMoodOffset += mood.thought.stages[0].baseMoodEffect;
+      extraMoodOffset += mood.thought.stages[0].baseMoodEffect;
       if (precept == null && mood.fromPrecept != null)
       {
         precept = mood.fromPrecept;
@@ -58,11 +61,19 @@ public static class ThoughtsFromIngesting_MergeMoodPatch
     desc = desc.TrimEnd('\n');
     label = label.TrimEnd('\n');
 
-    if (mealMoodOffset < totalMoodOffset)
+    // The combined thought replaces every thought in __result, so it has to carry the
+    // meal's own mood as well as the extras - otherwise eating a gourmet meal with one
+    // condiment is worth the condiment alone.
+    float totalMoodOffset = mealMoodOffset + extraMoodOffset;
+
+    // Enhanced or diminished relative to the plain meal, so the tag tracks what the extras
+    // did. Comparing against mealMoodOffset instead would label every meal whose taste
+    // thought outweighs its condiments as diminished.
+    if (extraMoodOffset > 0)
     {
       label += " (enhanced)";
     }
-    else if (mealMoodOffset > totalMoodOffset)
+    else if (extraMoodOffset < 0)
     {
       label += " (diminished)";
     }
